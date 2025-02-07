@@ -14,6 +14,7 @@ namespace Tools.InputSystem.Actions
     [CreateAssetMenu(fileName = "InputReader", menuName = "MeatNSoap_RFA/InputReader", order = 0)]
     public class InputReader : ScriptableObject, IInputReader, IPlayerActions
     {
+        public Key a;
         public event UnityAction<Vector2> Move = delegate { };
         public event UnityAction<bool> Jump = delegate { };
         
