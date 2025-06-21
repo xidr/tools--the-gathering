@@ -1,4 +1,4 @@
-using Tools.Singleton;
+using Patterns.Singleton.GA;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
