@@ -7,7 +7,7 @@ namespace Tools.Multi_Scene_Loading {
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         static async void Init() {
             Debug.Log("Bootstrapper init");
-            await SceneManager.LoadSceneAsync("Bootstrapper", LoadSceneMode.Single);
+            await SceneManager.LoadSceneAsync("Bootstrapper", LoadSceneMode.Additive);
         }
     }
 }

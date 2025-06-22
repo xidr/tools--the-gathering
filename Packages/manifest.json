@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.annulusgames.alchemy": "https://github.com/annulusgames/Alchemy.git?path=/Alchemy/Assets/Alchemy",
     "com.eflatun.scenereference": "git+https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1",
     "com.unity.ai.navigation": "2.0.8",
     "com.unity.collab-proxy": "2.8.2",
@@ -8,6 +9,7 @@
     "com.unity.inputsystem": "1.14.0",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.render-pipelines.universal": "17.1.0",
+    "com.unity.serialization": "3.1.2",
     "com.unity.test-framework": "1.5.1",
     "com.unity.timeline": "1.8.7",
     "com.unity.ugui": "2.0.0",
