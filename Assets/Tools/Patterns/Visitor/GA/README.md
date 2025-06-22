@@ -1,6 +1,8 @@
 https://youtu.be/Q2gQs6gIzCM?si=HfIZLZ0ZCTUfllsm
 
-Power up system
+Use cases:
+- Supply data from `GameDataManager`
+- Power up system
 
 Based on Double Dispatch
 
