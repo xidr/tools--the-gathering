@@ -1,5 +1,7 @@
 https://youtu.be/GL1w7IZ1OYU?si=OQ430_QBpWaFE-RB
 
+Good for arranging combos
+
 Think about is as that's a method or several methods wrapped in an object. I can treat it like data (store if, organize it, and pass it around)
 
 It wraps a method into an object
