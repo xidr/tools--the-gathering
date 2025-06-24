@@ -1,5 +1,7 @@
 https://youtu.be/rRsfikzuobQ?si=gjFlckvQ2dfPE-He
 
+# Mediator
+
 It exists to act as a central point of access for information so that the others components don't have to know anything about each other: UI don't have to know anything about the hero to get the hero stats - So this is why using the `ServiceLocator` is such a great idea here???? Instead of making them to communicate through Events????????!!!!!!!!!!!
 
 Mediator is the only thing parts of code need to know about to make some job done yas!
@@ -12,3 +14,7 @@ Often used in building UI systems
 - Message to do that for one specific target
 
 Mediators have a tendency to become god objects
+
+# Law of Demeter
+
+Use Mediator as an access point for health as an example to reduce chaining
