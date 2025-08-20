@@ -49,7 +49,7 @@ namespace Patterns.StateMachine.GA_HSM {
             idle = new Idle(m, this, ctx);
             move = new Move(m, this, ctx);
             
-            
+            Add(new DelayActivationActivity {delay = 0.5f});
         }
 
         protected override State GetInitialState() => idle;

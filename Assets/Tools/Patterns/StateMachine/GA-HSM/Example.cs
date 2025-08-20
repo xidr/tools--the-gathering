@@ -5,10 +5,16 @@ namespace Patterns.StateMachine.GA_HSM {
         public readonly StateMachine machine;
         public readonly State parent;
         public State activeChild;
+        readonly List<IActivity> _activities = new();
+        public IReadOnlyList<IActivity> activities => _activities;
 
         public State(StateMachine machine, State parent = null) {
             this.machine = machine;
             this.parent = parent;
+        }
+
+        public void Add(IActivity a) {
+            if (a != null) _activities.Add(a);
         }
 
         protected virtual State GetInitialState() =>
@@ -45,17 +51,17 @@ namespace Patterns.StateMachine.GA_HSM {
             if (activeChild != null) activeChild.Update(deltaTime);
             OnUpdate(deltaTime);
         }
-        
+
         // Returns the deepest currently-active descendant state (the leaf of the active path)
         public State Leaf() {
-            State s = this;
+            var s = this;
             while (s.activeChild != null) s = s.activeChild;
             return s;
         }
-        
+
         // Yields this state and then each ancestor up to the root (self -> parent -> ... -> root)
         public IEnumerable<State> PathToRoot() {
-            for (State s = this; s != null; s = s.parent) yield return s;
+            for (var s = this; s != null; s = s.parent) yield return s;
         }
     }
 }
